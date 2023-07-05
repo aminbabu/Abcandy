@@ -1,0 +1,257 @@
+@media (max-width: 991.98px) {
+  /* ========== Header Main Styles ========== */
+  .header-main .offcanvas-collapse {
+    position: fixed;
+    top: 56px; /* Height of navbar */
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: rgba(var(--ac-surface), var(--ac-bg-opacity));
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+
+  .header-main .offcanvas-collapse.open {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+  /* ========== Header Main Styles ========== */
+}
+
+@media only screen and (min-width: 576px) {
+  /* ========== Common Styles ========== */
+  /* ========== Common Styles ========== */
+
+  /* ========== Redefine Bootstrap Styles ========== */
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    --bs-gutter-x: 1.5rem;
+  }
+
+  .section {
+    padding-bottom: 3.5rem;
+  }
+  /* ========== Redefine Bootstrap Styles ========== */
+
+  /* ========== Hero Banner Styles ========== */
+  .banner-carousel .splide__arrows {
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 17vw;
+    left: 0;
+    right: 0;
+    margin-inline: calc(10% - 1rem * 3.125);
+  }
+
+  .banner-carousel .splide__arrow {
+    position: static;
+    pointer-events: all;
+    transform: none;
+  }
+
+  .banner-carousel .splide__arrow--prev {
+    left: 0;
+  }
+
+  .banner-carousel .splide__arrow--next {
+    right: 0;
+  }
+  /* ========== Hero Banner Styles ========== */
+}
+
+@media only screen and (min-width: 768px) {
+  /* ========== Common Styles ========== */
+
+  .section {
+    padding-bottom: 4rem;
+  }
+  /* ========== Common Styles ========== */
+
+  /* ========== Hero Banner Styles ========== */
+  .banner-carousel .splide__arrows {
+    top: 15.5vw;
+    margin-inline: calc(15% - 1.5rem * 2.375);
+  }
+  /* ========== Hero Banner Styles ========== */
+
+  /* ========== Team Jubotron Styles ========== */
+  .team-jubotron {
+    padding-block: 4.5rem;
+  }
+
+  .team-jubotron .inner-content {
+    padding: 2.5rem;
+  }
+  /* ========== Team Jubotron Styles ========== */
+
+  /* ========== Blog Posts Styles ========== */
+  .banner-add {
+    max-height: 100%;
+  }
+  /* ========== Blog Posts Styles ========== */
+
+  /* ========== Footer Widgets Styles ========== */
+  .footer-widgets {
+    padding-bottom: 4rem;
+  }
+
+  .footer-widgets .social-list {
+    justify-content: flex-start;
+  }
+  /* ========== Footer Widgets Styles ========== */
+}
+
+@media only screen and (min-width: 992px) {
+  /* ========== Common Styles ========== */
+  .hero-padding-top {
+    padding-top: 4.5rem !important;
+  }
+  /* ========== Common Styles ========== */
+
+  /* ========== Redefine Bootstrap Styles ========== */
+  .navbar {
+    --bs-navbar-padding-y: 1rem;
+    --bs-navbar-nav-link-padding-x: 0.75rem;
+  }
+
+  .navbar-brand > * {
+    width: 8rem;
+  }
+
+  .modal {
+    --bs-modal-header-padding-x: 1.25rem;
+    --bs-modal-header-padding-y: 1.25rem;
+    --bs-modal-padding: 1.875rem;
+    --bs-modal-header-padding: 1.25rem 1.25rem;
+  }
+
+  .card-lg {
+    --bs-card-spacer-x: 1.875rem;
+  }
+
+  .card-lg .card-body {
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x)
+      var(--bs-card-spacer-x) var(--bs-card-spacer-x);
+  }
+
+  .btn-lg {
+    --bs-btn-padding-x: 2rem;
+    --bs-btn-padding-y: 0.75rem;
+  }
+  /* ========== Redefine Bootstrap Styles ========== */
+
+  /* ========== Splide JS Styles ========== */
+  .splide__pagination {
+    padding: 1.25em;
+  }
+
+  .splide__arrow {
+    width: 2.25em;
+    height: 2.25em;
+  }
+
+  .splide__arrow svg {
+    width: 1.125rem;
+  }
+  /* ========== Splide JS Styles ========== */
+
+  /* ========== Header Main Styles ========== */
+  .header-main.header-scrolled .navbar {
+    --bs-navbar-padding-y: 0.625rem;
+  }
+  /* ========== Header Main Styles ========== */
+
+  /* ========== Contact Us Modal Styles ========== */
+  .contact-us-modal .btn {
+    padding: 0.75rem 2rem;
+  }
+  /* ========== Contact Us Modal Styles ========== */
+
+  /* ========== Hero Banner Styles ========== */
+  .banner-carousel .splide__arrows {
+    top: 13vw;
+    margin-inline: calc(20% - 1.875rem * 2.25);
+  }
+  /* ========== Hero Banner Styles ========== */
+
+  /* ========== Featured Posts Styles ========== */
+  .featured-posts .input-search {
+    max-width: 300px;
+    margin-left: auto;
+  }
+  /* ========== Featured Posts Styles ========== */
+
+  /* ========== Team Jubotron Styles ========== */
+  .team-jubotron .inner-content {
+    padding: 3.125rem 3.75rem;
+  }
+  /* ========== Team Jubotron Styles ========== */
+
+  /* ========== Footer Widgets Styles ========== */
+  .footer-widgets {
+    padding-bottom: 5rem;
+  }
+  /* ========== Footer Widgets Styles ========== */
+}
+
+@media only screen and (min-width: 1200px) {
+  /* ========== Common Styles ========== */
+  .hero-padding-top {
+    padding-top: 5.375rem !important;
+  }
+
+  .section {
+    padding-bottom: 5rem;
+  }
+  /* ========== Common Styles ========== */
+
+  /* ========== Redefine Bootstrap Styles ========== */
+  .navbar {
+    --bs-navbar-padding-y: 1.375rem;
+    --bs-navbar-nav-link-padding-x: 1rem;
+  }
+  /* ========== Redefine Bootstrap Styles ========== */
+
+  /* ========== Team Jubotron Styles ========== */
+  .team-jubotron h2 {
+    font-size: 2.25rem;
+  }
+  /* ========== Team Jubotron Styles ========== */
+
+  /* ========== Footer Widgets Styles ========== */
+  .footer-widgets {
+    padding-bottom: 6rem;
+  }
+  /* ========== Footer Widgets Styles ========== */
+}
+
+@media only screen and (min-width: 1400px) {
+  /* ========== Common Styles ========== */
+  /* ========== Common Styles ========== */
+
+  /* ========== Redefine Bootstrap Styles ========== */
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1314px;
+  }
+  /* ========== Redefine Bootstrap Styles ========== */
+}
+
+@media only screen and (min-width: 1600px) {
+  /* ========== Common Styles ========== */
+  /* ========== Common Styles ========== */
+}

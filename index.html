@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abcandy - Landing</title>
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" />
+    <!-- splide js -->
+    <link rel="stylesheet" href="./vendor/splide/css/splide.min.css" />
+    <!-- nice select 2 -->
+    <link rel="stylesheet" href="./vendor/nice-select-2/css/nice-select2.css" />
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/main.res.css" />
+  </head>
+  <body class="min-vh-100 d-flex flex-column overflow-x-hidden">
+    <!-- ========== Header Start ========== -->
+    <header id="header-main" class="header-main fixed-top bg-white">
+      <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+        <div class="container">
+          <a class="navbar-brand d-lg-none" href="./index.html">
+            <img
+              src="./assets/images/brand-logo.svg"
+              alt="Abcandy"
+              width="128"
+              height="23"
+            />
+          </a>
+          <button
+            class="navbar-toggler p-0 border-0"
+            type="button"
+            id="navbarSideCollapse"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="navbar-collapse offcanvas-collapse d-lg-flex text-center text-lg-start py-3 py-lg-0"
+            id="navbarMainMenu"
+          >
+            <ul class="navbar-nav col-lg-4">
+              <li class="nav-item">
+                <a class="nav-link" href="#about"> About </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services"> Services </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#whatsnew"> What's new? </a>
+              </li>
+            </ul>
+            <div class="d-none d-lg-flex col-lg-4 justify-content-lg-center">
+              <a class="navbar-brand" href="./index.html">
+                <img
+                  src="./assets/images/brand-logo.svg"
+                  alt="Abcandy"
+                  width="130"
+                  height="23"
+                />
+              </a>
+            </div>
+            <ul class="navbar-nav col-lg-4 justify-content-lg-end">
+              <li class="nav-item">
+                <a class="nav-link" href="#community"> Community </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog"> Blog </a>
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn btn-primary mx-lg-2 my-2 my-lg-0 fw-medium"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contactUsModal"
+                >
+                  Contact Us
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Contact Us Modal -->
+    <div
+      class="modal contact-us-modal fade"
+      id="contactUsModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="contactUsModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-4" id="contactUsModalLabel">
+              Contact us
+            </h1>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="name" class="form-label">Your name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="col-sm-6">
+                <label for="email" class="form-label">Your email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Enter email"
+                />
+              </div>
+              <div class="col-12">
+                <label for="subject" class="form-label">Select subject</label>
+                <select name="subject" id="subject" class="ac-select wide">
+                  <option value="0">Select subject</option>
+                  <option value="1">Web Design</option>
+                  <option value="2">Web Development</option>
+                  <option value="3">UI / UX Design</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Your message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="4"
+                  placeholder="Your message"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <div class="col-12 text-end">
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Us Modal -->
+    <!-- ========== Header End ========== -->
+
+    <!-- ========== Main Start ========== -->
+    <main id="main-sections" class="main-sections flex-grow-1">
+      <!-- Hero Banner Start -->
+      <section class="hero-banner hero-padding-top section">
+        <div
+          class="bg-holder"
+          style="background-image: url('./assets/images/site-bg.svg')"
+        ></div>
+        <!--// bg-holder  -->
+        <div
+          id="banner-carousel"
+          class="splide banner-carousel"
+          role="group"
+          aria-label="Hero banner carousel"
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="card card-lg banner-blog">
+                  <div class="ac-card-img-top">
+                    <img
+                      src="https://images.unsplash.com/photo-1496309732348-3627f3f040ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                      alt="Banner"
+                      width="850"
+                      height="400"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="blog-meta">
+                      <a href="#" class="blog-topic">Design & Creative</a>
+                      <div class="blog-published-date">10 June 2023</div>
+                    </div>
+                    <h2>
+                      <a href="#" class="card-title line-clamp">
+                        Lorem ipsum dolor sit amet consectetur
+                      </a>
+                    </h2>
+                    <p class="banner-blog--desc line-clamp line-clamp--2">
+                      Lorem ipsum dolor sit amet consectetur. Egestas aliquet
+                      quam consectetur elementum aenean fringilla amet blandit
+                      duis. Neque habitant odio donec adipiscing etiam lobortis
+                      volutpat
+                    </p>
+                    <a href="#" class="btn btn-outline-primary fw-medium"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card card-lg banner-blog">
+                  <div class="ac-card-img-top">
+                    <img
+                      src="https://images.unsplash.com/photo-1688408958906-48319544f983?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=685&q=80"
+                      alt="Banner"
+                      width="850"
+                      height="400"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="blog-meta">
+                      <a href="#" class="blog-topic">Design & Creative</a>
+                      <div class="blog-published-date">10 June 2023</div>
+                    </div>
+                    <h2>
+                      <a href="#" class="card-title line-clamp">
+                        Egestas aliquet quam consectetur elementum aenean frin
+                      </a>
+                    </h2>
+                    <p class="banner-blog--desc line-clamp line-clamp--2">
+                      Lorem ipsum dolor sit amet consectetur. Egestas aliquet
+                      quam consectetur elementum aenean fringilla amet blandit
+                      duis. Neque habitant odio donec adipiscing etiam lobortis
+                      volutpat
+                    </p>
+                    <a href="#" class="btn btn-outline-primary fw-medium"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card card-lg banner-blog">
+                  <div class="ac-card-img-top">
+                    <img
+                      src="https://images.unsplash.com/photo-1496309732348-3627f3f040ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                      alt="Banner"
+                      width="850"
+                      height="400"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="blog-meta">
+                      <a href="#" class="blog-topic">Design & Creative</a>
+                      <div class="blog-published-date">10 June 2023</div>
+                    </div>
+                    <h2>
+                      <a href="#" class="card-title line-clamp">
+                        Lorem ipsum dolor sit amet consectetur
+                      </a>
+                    </h2>
+                    <p class="banner-blog--desc line-clamp line-clamp--2">
+                      Lorem ipsum dolor sit amet consectetur. Egestas aliquet
+                      quam consectetur elementum aenean fringilla amet blandit
+                      duis. Neque habitant odio donec adipiscing etiam lobortis
+                      volutpat
+                    </p>
+                    <a href="#" class="btn btn-outline-primary fw-medium"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="card card-lg banner-blog">
+                  <div class="ac-card-img-top">
+                    <img
+                      src="https://images.unsplash.com/photo-1688408958906-48319544f983?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=685&q=80"
+                      alt="Banner"
+                      width="850"
+                      height="400"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="blog-meta">
+                      <a href="#" class="blog-topic">Design & Creative</a>
+                      <div class="blog-published-date">10 June 2023</div>
+                    </div>
+                    <h2>
+                      <a href="#" class="card-title line-clamp">
+                        Egestas aliquet quam consectetur elementum aenean frin
+                      </a>
+                    </h2>
+                    <p class="banner-blog--desc line-clamp line-clamp--2">
+                      Lorem ipsum dolor sit amet consectetur. Egestas aliquet
+                      quam consectetur elementum aenean fringilla amet blandit
+                      duis. Neque habitant odio donec adipiscing etiam lobortis
+                      volutpat
+                    </p>
+                    <a href="#" class="btn btn-outline-primary fw-medium"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_15_47)">
+                  <path
+                    d="M18.56 9.43991L13.52 4.39991C13.2 4.07991 12.72 4.07991 12.4 4.39991C12.08 4.71991 12.08 5.19991 12.4 5.51991L16.08 9.19991H2.00001C1.52001 9.19991 1.20001 9.51991 1.20001 9.99991C1.20001 10.4799 1.52001 10.7999 2.00001 10.7999H16.08L12.4 14.4799C12.08 14.7999 12.08 15.2799 12.4 15.5999C12.56 15.7599 12.8 15.8399 12.96 15.8399C13.12 15.8399 13.36 15.7599 13.52 15.5999L18.56 10.5599C18.72 10.3999 18.8 10.2399 18.8 9.99991C18.8 9.75991 18.72 9.59991 18.56 9.43991Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_15_47">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+            <button class="splide__arrow splide__arrow--next">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_15_47)">
+                  <path
+                    d="M18.56 9.43991L13.52 4.39991C13.2 4.07991 12.72 4.07991 12.4 4.39991C12.08 4.71991 12.08 5.19991 12.4 5.51991L16.08 9.19991H2.00001C1.52001 9.19991 1.20001 9.51991 1.20001 9.99991C1.20001 10.4799 1.52001 10.7999 2.00001 10.7999H16.08L12.4 14.4799C12.08 14.7999 12.08 15.2799 12.4 15.5999C12.56 15.7599 12.8 15.8399 12.96 15.8399C13.12 15.8399 13.36 15.7599 13.52 15.5999L18.56 10.5599C18.72 10.3999 18.8 10.2399 18.8 9.99991C18.8 9.75991 18.72 9.59991 18.56 9.43991Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_15_47">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Banner End -->
+
+      <!-- Featured Posts Start -->
+      <section class="featured-posts mb-4 pb-3">
+        <div class="container">
+          <div class="row gx-3 align-items-center mb-4 pb-3">
+            <div class="col-lg-6">
+              <div
+                class="d-flex flex-wrap justify-content-between justify-content-lg-start"
+              >
+                <h2 class="h1 fw-bold ff-dm-sans mb-3 mb-lg-0 me-4 pe-3">
+                  Blog
+                </h2>
+                <div
+                  class="btn-group flex-wrap gap-3 align-self-center mb-3 mb-lg-0"
+                >
+                  <a
+                    href="#"
+                    class="btn btn-dark btn-dark-10 fw-normal rounded-pill"
+                    >Sports</a
+                  >
+                  <a
+                    href="#"
+                    class="btn btn-dark btn-dark-10 fw-normal rounded-pill"
+                    >Sports Car</a
+                  >
+                  <a
+                    href="#"
+                    class="btn btn-dark btn-dark-10 fw-normal rounded-pill"
+                    >Bike</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <form method="post">
+                <div class="input-group input-search">
+                  <span class="input-group-text" id="search-addon">
+                    <svg
+                      class="ac-icon"
+                      width="17"
+                      height="17"
+                      viewBox="0 0 17 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13.8936 13.0096C14.9997 11.703 15.6667 10.0127 15.6667 8.16663C15.6667 4.02449 12.3088 0.666626 8.16666 0.666626C4.02452 0.666626 0.666656 4.02449 0.666656 8.16663C0.666656 12.3088 4.02452 15.6666 8.16666 15.6666C10.0127 15.6666 11.703 14.9996 13.0097 13.8935L15.2247 16.1085C15.4688 16.3526 15.8645 16.3526 16.1086 16.1085C16.3527 15.8645 16.3527 15.4688 16.1086 15.2247L13.8936 13.0096ZM14.4167 8.16663C14.4167 11.6184 11.6184 14.4166 8.16666 14.4166C4.71487 14.4166 1.91666 11.6184 1.91666 8.16663C1.91666 4.71484 4.71487 1.91663 8.16666 1.91663C11.6184 1.91663 14.4167 4.71484 14.4167 8.16663Z"
+                        fill="#2C2347"
+                      />
+                    </svg>
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search"
+                    aria-label="Search"
+                    aria-describedby="search-addon"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row g-4 gy-lg-0">
+            <div class="col-lg-6">
+              <div class="card featured-post--item">
+                <div
+                  id="featured-post-carousel"
+                  class="splide featured-post-carousel"
+                  role="group"
+                  aria-label="Featured Posts Thumbnails"
+                >
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <div class="ac-card-img-top">
+                          <img
+                            src="./assets/images/blog-2.png"
+                            alt="Blog"
+                            width="850"
+                            height="400"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="ac-card-img-top">
+                          <img
+                            src="./assets/images/blog-1.png"
+                            alt="Blog"
+                            width="850"
+                            height="400"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="ac-card-img-top">
+                          <img
+                            src="./assets/images/blog-2.png"
+                            alt="Blog"
+                            width="850"
+                            height="400"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="blog-meta">
+                    <a href="#" class="blog-topic">Design & Creative</a>
+                    <div class="blog-published-date">10 June 2023</div>
+                  </div>
+                  <div class="px-2">
+                    <h4>
+                      <a href="#" class="card-title line-clamp">
+                        Lorem ipsum dolor sit amet consectetur
+                      </a>
+                    </h4>
+                    <p class="banner-blog--desc line-clamp line-clamp--2">
+                      Lorem ipsum dolor sit amet consectetur. Egestas aliquet
+                      quam consectetur elementum aenean fringilla amet blandit
+                      duis. Neque habitant odio donec adipiscing etiam lobortis
+                      volutpat
+                    </p>
+                    <p class="mb-0">
+                      by
+                      <a href="#" class="author link-dark fw-medium"
+                        >John Doe</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card featured-post--item has-overlay">
+                <div class="ac-card-img-top">
+                  <img
+                    src="./assets/images/blog-1.png"
+                    alt="Blog"
+                    width="850"
+                    height="400"
+                    class="img-fluid"
+                  />
+                  <button
+                    type="button"
+                    class="btn play-btn fw-medium"
+                    data-bs-toggle="modal"
+                    data-bs-target="#watchNowModal"
+                  >
+                    Watch Now
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      style="
+                        fill: rgba(var(--ac-white), var(--ac-fill-opacity));
+                      "
+                    >
+                      <path
+                        d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"
+                      ></path>
+                      <path d="m9 17 8-5-8-5z"></path>
+                    </svg>
+                  </button>
+                </div>
+                <div class="card-body">
+                  <div class="blog-meta">
+                    <a href="#" class="blog-topic">Corporate</a>
+                    <div class="blog-published-date">10 June 2023</div>
+                  </div>
+                  <div class="px-2">
+                    <h4>
+                      <a href="#" class="card-title line-clamp line-clamp--2">
+                        Lorem ipsum dolor sit amet consectetur bibendum nunc in
+                        amet auctor enim massa
+                      </a>
+                    </h4>
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary fw-medium mt-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#watchNowModal"
+                    >
+                      Watch Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Contact Us Modal -->
+        <div
+          class="modal watch-now-modal media-modal fade"
+          id="watchNowModal"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="watchNowModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-transparent border-0">
+              <div class="modal-body p-0">
+                <div class="text-end">
+                  <button
+                    type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="ratio ratio-16x9">
+                  <iframe
+                    class="rounded-3"
+                    width="560"
+                    height="315"
+                    data-src="https://www.youtube.com/embed/qaQZZmBTTIw"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Contact Us Modal -->
+      </section>
+      <!-- Featured Posts End -->
+
+      <!-- Team Jumbotron Start -->
+      <section class="team-jubotron">
+        <div
+          class="bg-holder"
+          style="background-image: url('./assets/images/team-bg.png')"
+        ></div>
+        <!--// bg-holder  -->
+        <div class="container">
+          <div class="inner-content text-center">
+            <h2 class="text-white ff-dm-sans">
+              Creative team, intuitive solution
+            </h2>
+            <p class="text-white">
+              Lorem ipsum dolor sit amet consectetur. Enim vitae hendrerit
+              consectetur cras in nulla. Non suspendisse at ac enim. Facilisi
+              nulla tortor nec mollis faucibus odio sodales.
+            </p>
+            <button
+              type="button"
+              class="btn btn-lg btn-white fw-medium"
+              data-bs-toggle="modal"
+              data-bs-target="#contactUsModal"
+            >
+              Let's Talk
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Team Jumbotron End -->
+
+      <!-- Blog Posts Starts -->
+      <section class="blog-posts section">
+        <div class="container">
+          <div class="row g-4 gy-md-0 my-4 py-3">
+            <div class="col-md-8 col-xl-9">
+              <div class="card card-lg">
+                <div class="ac-card-img-top">
+                  <img
+                    src="./assets/images/blog-3.png"
+                    alt="Banner"
+                    width="850"
+                    height="400"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="card-body">
+                  <div class="blog-meta">
+                    <a href="#" class="blog-topic">Development</a>
+                    <div class="blog-published-date">10 June 2023</div>
+                  </div>
+                  <h2>
+                    <a href="#" class="card-title line-clamp">
+                      Lorem ipsum dolor sit amet consectetur
+                    </a>
+                  </h2>
+                  <p class="banner-blog--desc line-clamp line-clamp--2">
+                    Lorem ipsum dolor sit amet consectetur. Egestas aliquet quam
+                    consectetur elementum aenean fringilla amet blandit duis.
+                    Neque habitant odio donec adipiscing etiam lobortis volutpat
+                  </p>
+                  <a href="#" class="btn btn-outline-primary fw-medium"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xl-3">
+              <div class="card banner-add">
+                <div class="card-img-top h-100">
+                  <img
+                    src="./assets/images/robot-banner.png"
+                    alt="Banner"
+                    width="850"
+                    height="400"
+                    class="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+                <div class="card-img-overlay">
+                  <h2 class="h5 ff-dm-sans fw-bold mb-3">
+                    Do you need any creative service for your business?
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn btn-primary fw-medium"
+                    data-bs-toggle="modal"
+                    data-bs-target="#contactUsModal"
+                  >
+                    Let's Talk
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4 mb-4 pb-3">
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="ac-card-img-top">
+                  <img
+                    src="./assets/images/blog-4.png"
+                    alt="Banner"
+                    width="850"
+                    height="400"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="card-body">
+                  <div class="blog-meta">
+                    <a href="#" class="blog-topic">Design & Creative</a>
+                    <div class="blog-published-date">10 June 2023</div>
+                  </div>
+                  <h4>
+                    <a href="#" class="card-title line-clamp">
+                      Lorem ipsum dolor sit amet consectetur
+                    </a>
+                  </h4>
+                  <p class="banner-blog--desc line-clamp line-clamp--2">
+                    Lorem ipsum dolor sit amet consectetur. Egestas aliquet quam
+                    consectetur elementum aenean fringilla amet blandit duis.
+                    Neque habitant odio donec adipiscing etiam lobortis volutpat
+                  </p>
+                  <p class="mb-0">
+                    by
+                    <a href="#" class="author link-dark fw-medium">John Doe</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="ac-card-img-top">
+                  <img
+                    src="./assets/images/blog-5.png"
+                    alt="Banner"
+                    width="850"
+                    height="400"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="card-body">
+                  <div class="blog-meta">
+                    <a href="#" class="blog-topic">Marketing</a>
+                    <div class="blog-published-date">10 June 2023</div>
+                  </div>
+                  <h4>
+                    <a href="#" class="card-title line-clamp">
+                      Lorem ipsum dolor sit amet consectetur
+                    </a>
+                  </h4>
+                  <p class="banner-blog--desc line-clamp line-clamp--2">
+                    Lorem ipsum dolor sit amet consectetur. Egestas aliquet quam
+                    consectetur elementum aenean fringilla amet blandit duis.
+                    Neque habitant odio donec adipiscing etiam lobortis volutpat
+                  </p>
+                  <p class="mb-0">
+                    by
+                    <a href="#" class="author link-dark fw-medium">John Doe</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="ac-card-img-top">
+                  <img
+                    src="./assets/images/blog-6.png"
+                    alt="Banner"
+                    width="850"
+                    height="400"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="card-body">
+                  <div class="blog-meta">
+                    <a href="#" class="blog-topic">Tools</a>
+                    <div class="blog-published-date">10 June 2023</div>
+                  </div>
+                  <h4>
+                    <a href="#" class="card-title line-clamp">
+                      Lorem ipsum dolor sit amet consectetur
+                    </a>
+                  </h4>
+                  <p class="banner-blog--desc line-clamp line-clamp--2">
+                    Lorem ipsum dolor sit amet consectetur. Egestas aliquet quam
+                    consectetur elementum aenean fringilla amet blandit duis.
+                    Neque habitant odio donec adipiscing etiam lobortis volutpat
+                  </p>
+                  <p class="mb-0">
+                    by
+                    <a href="#" class="author link-dark fw-medium">John Doe</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 loadable-post">
+              <div class="card">
+                <div class="ac-card-img-top">
+                  <img
+                    src="./assets/images/blog-4.png"
+                    alt="Banner"
+                    width="850"
+                    height="400"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="card-body">
+                  <div class="blog-meta">
+                    <a href="#" class="blog-topic">Design & Creative</a>
+                    <div class="blog-published-date">10 June 2023</div>
+                  </div>
+                  <h4>
+                    <a href="#" class="card-title line-clamp">
+                      Lorem ipsum dolor sit amet consectetur
+                    </a>
+                  </h4>
+                  <p class="banner-blog--desc line-clamp line-clamp--2">
+                    Lorem ipsum dolor sit amet consectetur. Egestas aliquet quam
+                    consectetur elementum aenean fringilla amet blandit duis.
+                    Neque habitant odio donec adipiscing etiam lobortis volutpat
+                  </p>
+                  <p class="mb-0">
+                    by
+                    <a href="#" class="author link-dark fw-medium">John Doe</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 loadable-post">
+              <div class="card">
+                <div class="ac-card-img-top">
+                  <img
+                    src="./assets/images/blog-5.png"
+                    alt="Banner"
+                    width="850"
+                    height="400"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="card-body">
+                  <div class="blog-meta">
+                    <a href="#" class="blog-topic">Marketing</a>
+                    <div class="blog-published-date">10 June 2023</div>
+                  </div>
+                  <h4>
+                    <a href="#" class="card-title line-clamp">
+                      Lorem ipsum dolor sit amet consectetur
+                    </a>
+                  </h4>
+                  <p class="banner-blog--desc line-clamp line-clamp--2">
+                    Lorem ipsum dolor sit amet consectetur. Egestas aliquet quam
+                    consectetur elementum aenean fringilla amet blandit duis.
+                    Neque habitant odio donec adipiscing etiam lobortis volutpat
+                  </p>
+                  <p class="mb-0">
+                    by
+                    <a href="#" class="author link-dark fw-medium">John Doe</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 loadable-post">
+              <div class="card">
+                <div class="ac-card-img-top">
+                  <img
+                    src="./assets/images/blog-6.png"
+                    alt="Banner"
+                    width="850"
+                    height="400"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="card-body">
+                  <div class="blog-meta">
+                    <a href="#" class="blog-topic">Tools</a>
+                    <div class="blog-published-date">10 June 2023</div>
+                  </div>
+                  <h4>
+                    <a href="#" class="card-title line-clamp">
+                      Lorem ipsum dolor sit amet consectetur
+                    </a>
+                  </h4>
+                  <p class="banner-blog--desc line-clamp line-clamp--2">
+                    Lorem ipsum dolor sit amet consectetur. Egestas aliquet quam
+                    consectetur elementum aenean fringilla amet blandit duis.
+                    Neque habitant odio donec adipiscing etiam lobortis volutpat
+                  </p>
+                  <p class="mb-0">
+                    by
+                    <a href="#" class="author link-dark fw-medium">John Doe</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button
+              type="button"
+              id="load-more-post-btn"
+              class="btn btn-lg btn-outline-primary fw-medium"
+            >
+              Load More
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Blog Posts End -->
+    </main>
+    <!-- ========== Main End ========== -->
+
+    <!-- ========== Footer Start ========== -->
+    <footer id="footer-main" class="footer-main mt-auto">
+      <!-- ========== Footer Widgets Start ========== -->
+      <section class="footer-widgets">
+        <div class="container">
+          <h2 class="h4 text-white mb-3 ff-dm-sans text-center text-md-start">
+            Connect with us
+          </h2>
+          <ul class="list-unstyled social-list">
+            <li>
+              <a href="#" class="social-link">
+                <svg
+                  class="ac-icon"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g opacity="0.6" clip-path="url(#clip0_3_35)">
+                    <path
+                      d="M8 1.442C10.136 1.442 10.3893 1.45 11.2333 1.48867C13.4013 1.58733 14.414 2.616 14.5127 4.768C14.5513 5.61133 14.5587 5.86467 14.5587 8.00067C14.5587 10.1373 14.5507 10.39 14.5127 11.2333C14.4133 13.3833 13.4033 14.414 11.2333 14.5127C10.3893 14.5513 10.1373 14.5593 8 14.5593C5.864 14.5593 5.61067 14.5513 4.76733 14.5127C2.594 14.4133 1.58667 13.38 1.488 11.2327C1.44933 10.3893 1.44133 10.1367 1.44133 8C1.44133 5.864 1.45 5.61133 1.488 4.76733C1.58733 2.616 2.59733 1.58667 4.76733 1.488C5.61133 1.45 5.864 1.442 8 1.442ZM8 0C5.82733 0 5.55533 0.00933333 4.702 0.048C1.79667 0.181333 0.182 1.79333 0.0486667 4.70133C0.00933333 5.55533 0 5.82733 0 8C0 10.1727 0.00933333 10.4453 0.048 11.2987C0.181333 14.204 1.79333 15.8187 4.70133 15.952C5.55533 15.9907 5.82733 16 8 16C10.1727 16 10.4453 15.9907 11.2987 15.952C14.2013 15.8187 15.82 14.2067 15.9513 11.2987C15.9907 10.4453 16 10.1727 16 8C16 5.82733 15.9907 5.55533 15.952 4.702C15.8213 1.79933 14.2073 0.182 11.2993 0.0486667C10.4453 0.00933333 10.1727 0 8 0V0ZM8 3.892C5.73133 3.892 3.892 5.73133 3.892 8C3.892 10.2687 5.73133 12.1087 8 12.1087C10.2687 12.1087 12.108 10.2693 12.108 8C12.108 5.73133 10.2687 3.892 8 3.892ZM8 10.6667C6.52733 10.6667 5.33333 9.47333 5.33333 8C5.33333 6.52733 6.52733 5.33333 8 5.33333C9.47267 5.33333 10.6667 6.52733 10.6667 8C10.6667 9.47333 9.47267 10.6667 8 10.6667ZM12.2707 2.77C11.74 2.77 11.31 3.2 11.31 3.73C11.31 4.26 11.74 4.69 12.2707 4.69C12.8007 4.69 13.23 4.26 13.23 3.73C13.23 3.2 12.8007 2.77 12.2707 2.77Z"
+                      fill="white"
+                      fill-opacity="0.6"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_3_35">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <svg
+                  class="ac-icon"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g opacity="0.6" clip-path="url(#clip0_3_36)">
+                    <path
+                      d="M16 3.03799C15.4113 3.29932 14.7787 3.47532 14.1147 3.55466C14.7927 3.14866 15.3133 2.50532 15.558 1.73866C14.924 2.11466 14.2213 2.38799 13.4733 2.53532C12.8753 1.89732 12.0213 1.49866 11.0773 1.49866C8.958 1.49866 7.40067 3.47599 7.87933 5.52866C5.152 5.39199 2.73333 4.08532 1.114 2.09932C0.254 3.57466 0.668 5.50466 2.12933 6.48199C1.592 6.46466 1.08533 6.31732 0.643333 6.07132C0.607333 7.59199 1.69733 9.01466 3.276 9.33132C2.814 9.45666 2.308 9.48599 1.79333 9.38732C2.21067 10.6913 3.42267 11.64 4.86 11.6667C3.48 12.7487 1.74133 13.232 0 13.0267C1.45267 13.958 3.17867 14.5013 5.032 14.5013C11.1267 14.5013 14.57 9.35399 14.362 4.73732C15.0033 4.27399 15.56 3.69599 16 3.03799V3.03799Z"
+                      fill="white"
+                      fill-opacity="0.6"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_3_36">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <svg
+                  class="ac-icon"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g opacity="0.6" clip-path="url(#clip0_3_37)">
+                    <path
+                      d="M13.0767 2.12269C10.674 1.95869 5.32267 1.95936 2.92333 2.12269C0.325333 2.30002 0.0193333 3.86936 0 8.00002C0.0193333 12.1234 0.322667 13.6994 2.92333 13.8774C5.32333 14.0407 10.674 14.0414 13.0767 13.8774C15.6747 13.7 15.9807 12.1307 16 8.00002C15.9807 3.87669 15.6773 2.30069 13.0767 2.12269ZM6 10.6667V5.33336L11.3333 7.99536L6 10.6667Z"
+                      fill="white"
+                      fill-opacity="0.6"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_3_37">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <svg
+                  class="ac-icon"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g opacity="0.6">
+                    <path
+                      d="M6 5.33333H4V8H6V16H9.33333V8H11.7613L12 5.33333H9.33333V4.222C9.33333 3.58533 9.46133 3.33333 10.0767 3.33333H12V0H9.46133C7.064 0 6 1.05533 6 3.07667V5.33333Z"
+                      fill="white"
+                      fill-opacity="0.6"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- ========== Footer Widgets Start ========== -->
+
+      <!-- ========== Footer Copyright Start ========== -->
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="row gy-2 gy-md-0 gx-4 align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+              <p class="mb-0 copyright-text">© 2023 ABCandy Bangladesh Ltd.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <p class="mb-0">
+                <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ========== Footer Copyright Start ========== -->
+    </footer>
+    <!-- ========== Footer End ========== -->
+
+    <!-- ========== SVG Starts ========== -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none"></svg>
+    <!-- ========== SVG End ========== -->
+
+    <!-- bootstrap -->
+    <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- splide js -->
+    <script src="./vendor/splide/js/splide.min.js"></script>
+    <!-- nice select 2 -->
+    <script src="./vendor/nice-select-2/js/nice-select2.js"></script>
+    <!-- scripts -->
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
